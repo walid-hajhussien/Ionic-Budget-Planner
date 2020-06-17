@@ -33,23 +33,23 @@
                                     <ion-col size="12">
                                         <ion-item>
                                             <ion-label position="floating">Expense Reason</ion-label>
-                                            <ion-input type="text"></ion-input>
+                                            <ion-input type="text" id="input-reason"></ion-input>
                                         </ion-item>
                                         <ion-item>
                                             <ion-label position="floating">Expense Amount</ion-label>
-                                            <ion-input type="number"></ion-input>
+                                            <ion-input type="number" id="input-amount"></ion-input>
                                         </ion-item>
                                     </ion-col>
 
                                     <ion-col size="12">
                                         <ion-col size="6"  class="ion-float-left">
-                                            <ion-button size="default" fill="outline" shape="round"  color="danger">
+                                            <ion-button id="btn-cancel" size="default" fill="outline" shape="round"  color="danger">
                                                 <ion-icon slot="start" name="close"></ion-icon>
                                                 Clear
                                             </ion-button>
                                         </ion-col>
                                         <ion-col size="6"  class="ion-float-right">
-                                            <ion-button style="width: 50px" size="default" fill="outline" shape="round"  color="primary">
+                                            <ion-button id="btn-add" style="width: 121px" size="default" fill="outline" shape="round"  color="primary">
                                                 <ion-icon slot="start" name="add-outline"></ion-icon>
                                                 Add
                                             </ion-button>
@@ -70,6 +70,8 @@
 
     </ion-content>
 </ion-app>
+
+<script src="app.js"></script>
 </body>
 
 
