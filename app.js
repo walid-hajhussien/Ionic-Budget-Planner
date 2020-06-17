@@ -13,6 +13,7 @@ addButton.addEventListener('click', ($event) => {
     const amount = inputAmount.value;
 
     if(reason.trim().length===0 || amount.trim().length===0){
+        presentAlert()
         return;
     }
 
@@ -42,3 +43,16 @@ cancelButton.addEventListener('click',()=>{
     clear();
 })
 
+
+// alert function
+function presentAlert() {
+    const alert = document.createElement('ion-alert');
+    alert.cssClass = 'my-custom-class';
+    alert.header = 'Invalid Input !';
+    alert.subHeader = '';
+    alert.message = 'Please Fill The Amount & Expenses';
+    alert.buttons = ['OK'];
+
+    document.body.appendChild(alert);
+    return alert.present();
+}
